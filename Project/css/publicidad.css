@@ -1,0 +1,26 @@
+.maincontainer{
+    width: 85.375rem;
+height: 11.875rem;
+flex-shrink: 0;
+}
+
+.bodyH1{
+    color: var(--typo-black, #000);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 1.05rem */
+    letter-spacing: -0.0075rem;
+    text-transform: uppercase;
+}
+
+.bannerimg{
+    background: var(--primario-90, #262626);
+    width: 85.375rem; 
+    height: 8.5rem;
+    /* Oscuras/Inferior */
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.10);
+    object-fit: cover;
+}

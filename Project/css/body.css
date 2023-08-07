@@ -1,70 +1,110 @@
-.bodyMain {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: ce;
-  gap: 1.25rem;
+* {
+  background-color: #fafafa;
 }
-
-.bodyMainContainer {
-   
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1.25rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-}
-
-
-.bodyMainBanner{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5rem 12.3rem;
-}
-
 
 .bodyMainContentH1 {
   color: #000;
-  font-family: Spectral;
   font-size: 1.625rem;
   font-style: normal;
   font-weight: 700;
   line-height: 140%; /* 2.275rem */
-  padding-top: 1;
+  justify-content: flex-start;
+  margin-left: 1rem;
 }
+
 .bodyMainContentH3 {
   color: var(--typo-black, #000);
-  /* Desktop/H3 */
-  font-family: Spectral;
   font-size: 1.375rem;
   font-style: normal;
   font-weight: 600;
   line-height: 140%; /* 1.925rem */
   letter-spacing: 0.01375rem;
-  width: 37.5rem;
 }
 
-.bodyMainContentBody {
-  width: 37.375rem;
-  height: 18.75rem;
-  justify-content: center;
-  align-items: center;
-}
-
-.bodyMainContentBodyImg {
-    display: flex;
-    width: 37.375rem;
-    height: 18.75rem;
-    justify-content: center;
-    align-items: center;
-    object-fit: cover;
-    
-}
 .bodyMainContentBodyText {
-    margin-top: 10px;
+  color: var(--typo-black, #000);
+  font-family: Montserrat;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 1.225rem */
 }
 
 .bodyMainContentBodyText2 {
- 
+  color: var(--typo-black, #000);
+  font-family: Montserrat;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 1.05rem */
+  letter-spacing: 0.015rem;
+  text-transform: uppercase;
+  padding: 0;
+}
+
+/*
+*/
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul.slider {
+  text-align: center; /* centra los elementos horizontalmente */
+  width: 800px; /* corregido el valor del ancho */
+  height: auto;
+}
+
+ul.slider li {
+  display: none; /* oculta todos los slides por defecto */
+}
+
+ul.slider li img {
+  width: 37.375rem;
+  height: 18.75rem;
+  object-fit: cover;
+}
+
+ul.slider li:first-child {
+  display: block; /* muestra el primer slide */
+   }
+
+.menu {
+  display: flex;
+  align-items: flex-start;
+  gap: 31.875rem;
+}
+
+.menu li {
+  display: inline-block;
+  text-align: center;
+}
+
+.menu li a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.container.test {
+  display: flex;
+  flex-direction: row;
+}
+
+.slider-item {
+  display: flex;
+}
+
+.imageContainer {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.bodyMainContentH3,
+.bodyMainContentBodyText,
+.bodyMainContentBodyText2 {
+  margin-bottom: 0;
+  margin-top: 0;
 }
